@@ -1,0 +1,5 @@
+<%= link_to("Add Suitor", new_suitor_path) %>
+</br>
+<% @suitors.each do |suitor| %>
+  <p><%= link_to(suitor.name, suitor) %></p>
+<% end %>

@@ -1,0 +1,9 @@
+Bachelorette Show Page for <%= @bachelorette.name %>
+
+<%= link_to("Edit Bachelorette", edit_bachelorette_path(id: @bachelorette.id)) %>
+
+<%= form_for(@bachelorette, { :method => :delete}) do |f| %>
+<%= f.submit "Delete Bachelorette" %>
+<% end %>
+
+<%= link_to("Home", root_path) %>

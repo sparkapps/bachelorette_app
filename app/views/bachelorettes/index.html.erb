@@ -1,0 +1,5 @@
+<%= link_to("Add Bachelorette", new_bachelorette_path) %>
+</br>
+<% @bachelorettes.each do |bachelorette| %>
+  <p><%= link_to(bachelorette.name, bachelorette) %></p>
+<% end %>
